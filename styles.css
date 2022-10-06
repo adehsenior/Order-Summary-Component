@@ -1,0 +1,115 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+    background-color: hsl(225, 100%, 98%);
+    height: 100%;
+    color: hsl(224, 23%, 55%);
+    
+}
+
+main{
+    max-width: 375px;
+    margin: 0 auto;
+    background: url(./images/pattern-background-mobile.svg);
+    background-size: cover;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    width: 350px;
+    padding: 50px 0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img{
+    width: 350px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.order{
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+button{
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+.option a:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+
+.cancel p:hover{
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.option{
+    padding: 10px;
+}
+
+.annual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.icon img{
+    width: 48px;
+    height: 48px;
+}
+
+h4{
+    line-height: 0;
+}
+
+.annual p{
+    line-height: 0;
+}
+
+h2,h4{
+    color: black;
+}
+
+
+@media(min-width:420px){
+    main{
+        max-width: 900px;
+        margin: 0 auto;
+        background: url(./images/pattern-background-desktop.svg);
+        height: 100%;
+    }
+}
